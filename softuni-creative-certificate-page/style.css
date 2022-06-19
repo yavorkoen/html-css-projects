@@ -6,6 +6,7 @@ body {
     font-weight: 300;
     color: rgb(62, 61, 61);
     line-height: 1.3;
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -128,10 +129,17 @@ nav ul {
 .profession {
     padding: 5px 7%;
 }
+.profession-tab {
+    position: relative;
+}
 .profession-tab::after {
-    height: 5px;
+    content: "";
+    position: absolute;
+    bottom: 0.30px;
+    z-index: -1;
+    height: 1px;
     width: 100%;
-    background-color: gray;
+    background-color:  #d6d6d6;
 }
 .profession-tab ul {
     display: flex;
@@ -146,7 +154,7 @@ nav ul {
     padding: 10px 5px;
 }
 .profession-tab .selected {
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
 }
 .profession-tab li h3, .profession-tab li p {
     text-align: center;
