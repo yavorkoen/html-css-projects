@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+.logo-wrapper {
+    width: 70px;
+    height: 70px;
+}
+.logo-wrapper > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+nav {
+    width: 90%;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list-item {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.btn-primary {
+    text-transform: capitalize;
+    color: white;
+    background-color: rgb(154,97,196);
+    padding: 5px 14px;
+    border-radius: 20px;
+}
+
