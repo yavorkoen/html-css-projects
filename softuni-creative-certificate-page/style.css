@@ -313,3 +313,11 @@ nav ul {
         padding-bottom: 1%;
     }
 } 
+@media all and (max-width: 430px) {
+    body {
+        font-size: 0.8em;
+    }
+    .footer-menu {
+        justify-content: flex-start;
+    }
+}
