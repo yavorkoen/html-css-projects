@@ -179,8 +179,6 @@ nav ul {
 .profession-tab ul {
     display: flex;
     padding: 0;
-    /* justify-content: flex-start; */
-
 }
 
 .profession-tab li {
@@ -248,11 +246,17 @@ nav ul {
     margin: 0;
 }
 
-.find-us-menu {
-    width: 20%;
+.find-us-menu > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 }
 
+.find-us-menu > ul li {
+    padding-bottom: 8;
+}
 .icons {
+    min-width: 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -261,11 +265,12 @@ nav ul {
 .icons li {
     color: rgb(233, 232, 232);
     font-size: 1.8em;
+    padding-left: 5px;
 }
 .footer-menu::after {
     content: "";
     position: absolute;
-    bottom: 65px;
+    bottom: 70px;
     height: 1px;
     width: 90%;
     background-color:  rgb(123, 141, 158);
@@ -295,4 +300,16 @@ nav ul {
     .circle {
         display: none;
     }
-}
+    .diplomas-and-certificates, .google-certification, 
+    .cpe-certification, .profession-tab ul {
+        flex-direction: column;
+    }
+    .footer-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-menu li {
+        list-style: none;
+        padding-bottom: 1%;
+    }
+} 
